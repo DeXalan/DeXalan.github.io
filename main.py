@@ -36,6 +36,10 @@ def onClickButton():
     newTHeadCell_2.innerText = "Xn"
     newTHeadCell_3 = document.createElement("th")
     newTHeadCell_3.innerText = "Un"
+    newTHeadCell_3 = document.createElement("th")
+    newTHeadCell_3.innerText = "Z0"
+    newTHeadCell_3 = document.createElement("th")
+    newTHeadCell_3.innerText = "Mn"
     newTHead.appendChild(newTHeadCell_1)
     newTHead.appendChild(newTHeadCell_2)
     newTHead.appendChild(newTHeadCell_3)
