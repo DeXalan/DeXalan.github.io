@@ -36,13 +36,15 @@ def onClickButton():
     newTHeadCell_2.innerText = "Xn"
     newTHeadCell_3 = document.createElement("th")
     newTHeadCell_3.innerText = "Un"
-    newTHeadCell_3 = document.createElement("th")
-    newTHeadCell_3.innerText = "Z0"
-    newTHeadCell_3 = document.createElement("th")
-    newTHeadCell_3.innerText = "Mn"
+    newTHeadCell_4 = document.createElement("th")
+    newTHeadCell_4.innerText = "Z0"
+    newTHeadCell_5 = document.createElement("th")
+    newTHeadCell_5.innerText = "Mn"
     newTHead.appendChild(newTHeadCell_1)
     newTHead.appendChild(newTHeadCell_2)
     newTHead.appendChild(newTHeadCell_3)
+    newTHead.appendChild(newTHeadCell_4)
+    newTHead.appendChild(newTHeadCell_5)
     
     newTBody = document.createElement("tbody", { id: "tbody" })
     
