@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+
+    <script type="py" src="./main.py" config="./pyscript.toml"></script>
+
+    <style>
+        table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        }
+
+        tr:nth-child(even) {
+        background-color: #dddddd;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <h2>Ingrese los valores correspondientes :</h2>
+
+    <p>A:  
+        <input 
+            type="text" 
+            id="A" 
+            class ="py-input" 
+            value = "5"
+        />
+    <p>B:  
+        <input 
+            type="text" 
+            id="B" 
+            class ="py-input" 
+            value = "1"
+            />
+    <p>M:  
+        <input 
+            type="text" 
+            id="M" 
+            class ="py-input"
+            value = "9"
+            />
+    <p>X0: 
+        <input 
+            type="text" 
+            id="X0" 
+            class = "py-input"
+            value = "1"
+        />
+    <p>N:  
+        <input 
+            type="text" 
+            id="N"
+            class ="py-input" 
+            value = "10"
+            />
+            
+    <button
+        id="new-num-btn"
+        class="py-button"
+        type="submit"
+        py-click="onClickButton()"
+    >
+        Generador Congruencial
+        
+    </button>
+
+    <div id="divTable">
+        <table id="dataTable">
+            <thead>
+                <th>n</th>
+                <th>Xn</th>
+                <th>Un</th>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
